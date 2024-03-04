@@ -1,13 +1,13 @@
-// Import all of Bootstrap's CSS
-$theme-colors: (
+  @import "bootstrap/scss/functions";
+  @import "bootstrap/scss/variables";
+  
+  $theme-colors: map-merge($theme-colors, (
     "success": #5ccaa7,
     "primary": #038aff,
     "warning":#febd3d,
     "light":      #ffffff,
     "dark":#161348
-  );
-  
-
+  ));
 @import "bootstrap/scss/bootstrap";
 
 .bg-blue-card {
@@ -153,8 +153,3 @@ hr.faded-hr {
     align-items: center;
     justify-content: center;
   }
-
-
-
-
-//   @import "bootstrap/scss/bootstrap";
