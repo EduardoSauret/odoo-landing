@@ -1,7 +1,15 @@
 // Import all of Bootstrap's CSS
-// $theme-colors: (
-//     "success": #5ccaa7, 
-//   );
+$theme-colors: (
+    "success": #5ccaa7,
+    "primary": #038aff,
+    // "secondary":  $secondary,
+    // "success":    $success,
+    // "info":       $info,
+    "warning":#febd3d,
+    // "danger":     $danger,
+    "light":      #ffffff,
+    "dark":#161348
+  );
   
 
 //   $text-success: #5ccaa7 !important; 
@@ -19,7 +27,7 @@
 }
 
 .bg-primary {
-    --bs-bg-opacity: .8;
+    // --bs-bg-opacity: .8;
 }
 
 body,
