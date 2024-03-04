@@ -1,13 +1,11 @@
-  @import "bootstrap/scss/functions";
-  @import "bootstrap/scss/variables";
-  
-  $theme-colors: map-merge($theme-colors, (
-    "success": #5ccaa7,
-    "primary": #038aff,
-    "warning":#febd3d,
-    "light":      #ffffff,
-    "dark":#161348
-  ));
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+$theme-colors: map-merge($theme-colors, ("success": #5ccaa7,
+            "primary": #038aff,
+            "warning":#febd3d,
+            "light": #ffffff,
+            "dark":#161348));
 @import "bootstrap/scss/bootstrap";
 
 .bg-blue-card {
@@ -134,22 +132,50 @@ a {
 
 
 hr.faded-hr {
-    border: none; /* Remove default border */
-    height: 1px; /* Set the height of the HR */
+    border: none;
+    /* Remove default border */
+    height: 1px;
+    /* Set the height of the HR */
     background-image: linear-gradient(to right, transparent, #fff, transparent);
     /* Faded effect: transparent on the sides, solid color in the middle */
-    margin-top: 20px; /* Adjust the margin as needed */
-    margin-bottom: 20px; /* Adjust the margin as needed */
-  }
+    margin-top: 20px;
+    /* Adjust the margin as needed */
+    margin-bottom: 20px;
+    /* Adjust the margin as needed */
+}
 
-  .small-icon {
-    font-size: 18px; 
-  }
+.small-icon {
+    font-size: 18px;
+}
 
-  .checkbox-container {
+.checkbox-container {
     height: 20px;
     width: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+// Responsive 
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="rgba(255, 255, 255, 0.5)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+    border-color: #fff;
+}
+
+
+.navbar-toggler {
+    border-color: #fff !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+
+ @media (max-width: 992px) { 
+    /* Styles for extra small devices like mobile phones */
+    .footer {
+        height: 880px !important;
+    }
   }
