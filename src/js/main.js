@@ -16,6 +16,8 @@ for (var i = 0; i < cards.length; i++) {
     // Move the card up by 10 pixels
     this.style.position = 'relative';
     this.style.top = (topValue - 20) + 'px';
+    this.classList.remove('shadow-lg');
+    this.classList.add('shadow');
 
     console.log('card clicked');
     console.log(topValue);
