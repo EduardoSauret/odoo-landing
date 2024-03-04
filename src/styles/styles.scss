@@ -2,18 +2,11 @@
 $theme-colors: (
     "success": #5ccaa7,
     "primary": #038aff,
-    // "secondary":  $secondary,
-    // "success":    $success,
-    // "info":       $info,
     "warning":#febd3d,
-    // "danger":     $danger,
     "light":      #ffffff,
     "dark":#161348
   );
   
-
-//   $text-success: #5ccaa7 !important; 
-//   $bg-success: #5ccaa7 !important; 
 
 @import "bootstrap/scss/bootstrap";
 
@@ -21,13 +14,8 @@ $theme-colors: (
     background-color: rgb(46 16 101) !important;
 }
 
-
 .container-lg {
     max-width: 1134px;
-}
-
-.bg-primary {
-    // --bs-bg-opacity: .8;
 }
 
 body,
