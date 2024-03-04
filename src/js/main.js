@@ -11,12 +11,13 @@ var cards = document.querySelectorAll('.clickable');
 for (var i = 0; i < cards.length; i++) {
   // Add a click event listener to each card
   cards[i].addEventListener('click', function() {
-    var topValue = parseInt(this.style.top, 10);
+    var topValue = 0;
 
     // Move the card up by 10 pixels
     this.style.position = 'relative';
-    this.style.top = (topValue - 10) + '10px';
+    this.style.top = (topValue - 20) + 'px';
 
-
+    console.log('card clicked');
+    console.log(topValue);
   });
 }
