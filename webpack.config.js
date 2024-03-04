@@ -1,57 +1,75 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+'use strict'
+
+const path = require('path')
+const autoprefixer = require('autoprefixer')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: './src/js/main.js', // Your main JavaScript file
+  mode: 'development',
+  entry: './src/js/main.js',
   output: {
-    path: path.resolve(__dirname, 'dist'), // Where to output the build files
-    filename: 'bundle.js', // The name of the bundled JavaScript file
+    filename: 'main.js',
+    path: path.resolve(__dirname, 'dist'),
   },
+  devServer:{
+    static: path.resolve(__dirname, 'dist'),
+    port: 8080,
+    hot: true
+  },
+  plugins: [
+    new HtmlWebpackPlugin({ template: './src/index.html' })
+  ],
   module: {
     rules: [
-      // JavaScript rule
       {
-        test: /\.m?js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader', // If you need to compile modern JS down to ES5
-          options: {
-            presets: ['@babel/preset-env'],
+        test: /\.(scss)$/,
+        use: [
+          {
+            // Adds CSS to the DOM by injecting a `<style>` tag
+            loader: 'style-loader'
+          },
+          {
+            // Interprets `@import` and `url()` like `import/require()` and will resolve them
+            loader: 'css-loader'
+          },
+          {
+            // Loader for webpack to process CSS with PostCSS
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  autoprefixer
+                ]
+              }
+            }
+          },
+          {
+            // Loads a SASS/SCSS file and compiles it to CSS
+            loader: 'sass-loader'
+          }
+        ]
+      },
+      {
+        test: /\.html$/,
+        loader: 'html-loader',
+        options: {
+          sources: {
+            list: [
+              // Default settings for handling <img src="...">
+              {
+                tag: 'img',
+                attribute: 'src',
+                type: 'src',
+              },
+              // Add other tags and attributes here as needed
+            ],
           },
         },
       },
-      // SCSS rule
-      {
-        test: /\.scss$/,
-        use: [
-          MiniCssExtractPlugin.loader, // Extract CSS to a file
-          'css-loader', // Turns CSS into commonjs
-          'sass-loader', // Compiles Sass to CSS
-        ],
-      },
-      // Images and Fonts rule
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
-        generator: {
-            filename: './assets/images/[name][ext][query]', // Adjust the output path as necessary
-        }
+        type: 'asset/resource', // This will handle image loading
       },
-    ],
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html', // Your HTML file to use as a template
-    }),
-    new MiniCssExtractPlugin({
-      filename: '[name].css', // The name of the extracted CSS file
-    }),
-  ],
-  devServer: {
-    static: './dist', // The static files directory
-    open: true, // To open the browser after server had been started
-    compress: true, // Enable gzip compression for everything served
-    port: 8100, // Port to run the server on
-  },
-};
+    ]
+  }
+}
