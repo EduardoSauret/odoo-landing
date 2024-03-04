@@ -172,6 +172,18 @@ hr.faded-hr {
     box-shadow: none !important;
 }
 
+.top-10 {
+    top: 10px;
+}
+
+.start-10 {
+    left: 10px;
+}
+
+.end-10 {
+    right: 10px;
+}
+
 
  @media (max-width: 992px) { 
     /* Styles for extra small devices like mobile phones */
@@ -179,3 +191,5 @@ hr.faded-hr {
         height: 880px !important;
     }
   }
+
+
