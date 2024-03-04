@@ -1,5 +1,13 @@
 // Import all of Bootstrap's CSS
-// @import "bootstrap/scss/bootstrap";
+// $theme-colors: (
+//     "success": #5ccaa7, 
+//   );
+  
+
+//   $text-success: #5ccaa7 !important; 
+//   $bg-success: #5ccaa7 !important; 
+
+@import "bootstrap/scss/bootstrap";
 
 .bg-blue-card {
     background-color: rgb(46 16 101) !important;
@@ -152,12 +160,5 @@ hr.faded-hr {
 
 
 
-  $theme-colors: (
-    "success": #5ccaa7, 
-  );
-  
 
-  $text-success: #5ccaa7 !important; 
-  $bg-success: #5ccaa7 !important; 
-
-  @import "bootstrap/scss/bootstrap";
+//   @import "bootstrap/scss/bootstrap";
