@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body> 
+    <!-- NavBar Section -->
+    <nav class="navbar navbar-expand-lg bg-primary text-light py-4 flex-column">
+        <div class="container-lg text-light">
+            <div class="navbar-brand" ><img class="w-auto" src="assets/images/odoo-white.svg"></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0 row gx-4">
+                    <li class="nav-item col">
+                        <a class="nav-link active text-light" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item col">
+                        <a class="nav-link text-light">Products</a>
+                    </li>
+                    <li class="nav-item dropdown col">
+                        <a class="nav-link text-light">
+                            Pages
+                        </a>
+                    </li>
+                    <li class="nav-item col">
+                        <a class="nav-link text-light" aria-disabled="true">App</a>
+                    </li>
+                    <li class="nav-item col">
+                        <a class="nav-link text-light" aria-disabled="true">Docs</a>
+                    </li>
+                </ul>
+                <a class="nav-link me-4">Sign In</a>
+                <button class="btn btn-light px-4">Buy Now</button>
+            </div>
+        </div>
+        <hr class="container-lg text-light">
+    </nav>
+    <!-- Hero Section -->
+    <div class="bg-primary diagonal-background-section">
+        <div class="container-lg py-5 px-3">
+            <div class="row">
+                <div class="col-lg-7 text-light d-flex flex-column justify-content-end pb-4 pe-5">
+                    <h5 class="fs-1 text-light pe-5 mb-4 pe-5 w-50">Development done right</h5>
+                    <p class="card-text text-light mb-5 w-50">Build a beautiful, modern website with flexible components built
+                        from scratch.</p>
+                    <div class="mb-5">
+                        <button class="btn btn-light d-inline flex px-4 py-3">Get started +</button>
+                    </div>
+                    <div class="d-flex flex-row justify-content-start gap-4 mb-5">
+                        <span>Trusted By:</span>
+                        <img class="trusted-logo" src="assets/images/google-white.svg">
+                        <img class="trusted-logo" src="assets/images/spotify-white.svg">
+                        <img class="trusted-logo" src="assets/images/airbnb-white.svg">
+                        <img class="trusted-logo" src="assets/images/paypal-white.svg">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="bg-light p-4 custom-card">
+                        <!-- Card Section -->
+                        <div class="d-flex justify-content-between align-items-center p-2 mb-3 text-body">
+                            <h5 class="mb-0">Manage cards</h5>
+                            <button type="button" class="btn btn-outline-light border-secondary-subtle text-body border-2">Add new</button>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="d-flex flex-column gap-3">
+                                <div class="p-4 pb-5 rounded-4 bg-dark-blue text-light">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="mastercard-logo w-25"><img src="assets/images/mastercard.svg" ></div>
+                                        <span class="badge bg-success align-self-start mt-1 p-2">Active</span>
+                                    </div>
+                                    <div class="col justify-content-between">
+                                        <div class="fs-6">CARD NUMBER</div>
+                                        <div class="fs-3">4358 - 7421 - 9256 - 6682</div>
+                                    </div>
+                                    <div class="row justify-content-between">
+                                        <div class="mt-3 col">
+                                            <div class="fs-6">NAME</div>
+                                            <div class="h4">John Snow</div>
+                                        </div>
+                                        <div class="mt-3 col">
+                                            <div class="fs-6">EXPIRY DATE</div>
+                                            <div class="h4">11/23</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between py-3">
+                            <span class="flex-column">
+                                <div class="fw-medium ">Starbucks</div>
+                                <div>Pending - San Francisco, United States</div>
+                            </span>
+                            <span class="fw-medium">$5,50 USD</span>
+                        </div>
+                        <hr class="m-0">
+                        <div class="d-flex flex-row justify-content-between py-3">
+                            <span class="flex-column">
+                                <div class="fw-medium ">Nike Sports</div>
+                                <div>Pending - Lisbon, Portugal</div>
+                            </span>
+                            <span class="fw-medium">$129,00 USD</span>
+                        </div>
+                        <hr class="mt-0 mb-3">
+
+                        <a class="text-primary link-underline link-underline-opacity-0 dashed">View all ></a> 
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="container-lg py-5 mt-5">
+        <div class="row">
+            <div class="col-lg-7 flex-row position-relative">
+                <div class="projects-card shadow p-4">
+                    <h5 class="mb-4">Awesome projects</h5>
+                    <div class="mb-2 d-flex flex-row justify-content-between"><h6>Create the new logo</h6><span>3:50 ></span></div>
+                    <div class="progress mb-4" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-warning" style="width: 40%"></div>
+                    </div>
+                    <div class="mb-2 d-flex flex-row justify-content-between"><h6>Set up the color palette</h6><span>4:00 ></span></div>
+                    <div class="progress mb-4" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-warning" style="width: 60%"></div>
+                    </div>
+                    <div class="mb-2 d-flex flex-row justify-content-between"><h6>Wireframe and prototype</h6><span>6:50 ></span></div>
+                    <div class="progress mb-4" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-warning" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="projects-video-container rounded-4 shadow-lg overflow-hidden">
+                    <div class="w-100 h-100 position-relative" >
+                        <button class="btn btn-light position-absolute top-0 end-0">Play Video</button>
+                        <img class="w-100" src="assets/images/img_01.jpg" >
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex flex-column ps-5">
+                <span class="mb-4">
+                    <span class="badge rounded-pill text-bg-warning text-white d-inline py-2 px-3 ">Tools</span>
+                </span>
+                <h2 class="mb-4">We build for designers and developers</h2>
+                <p>Get components and examples, including tons of variables that will help you grow your business.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-lg py-5 my-5">
+        <div class="row gx-4 justify-content-between">
+            <div class="col-lg-5 d-flex flex-column justify-content-center pe-5">
+                <div class="mb-4">
+                    <span class="badge rounded-pill text-bg-success text-white py-2 px-3">Features</span>
+                </div>
+                <h5 class="mb-5">Get components and examples, including tons of variables that will help you grow your business.</h5>
+                <p class="text-success">Perfect for modern startups</p> 
+                <p class="text-success">Fully customizable and scalable</p> 
+            </div>
+            <div class="col-lg-6 justify-content-center">
+                <div class="features-img rounded-4 bg-primary shadow-lg overflow-hidden">
+                    <div class="w-100 h-100 position-relative">
+                        <button class="btn btn-light position-absolute top-0 start-0">Play Video</button>
+                        <img class="w-100" src="assets/images/img_02.jpg"> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container-lg">
+        <div class="row gx-5 justify-content-between">
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col">
+                        <div class="bg-white rounded-2 d-flex flex-column shadow mb-3 overflow-hidden">
+                            <div class="flex justify-content-end">
+                                <img class="w-100" src="assets/images/person_03.jpg">
+                            </div>
+                            <div class="d-flex flex-row gx-2 p-3">
+                                <span class="bg-warning rounded-circle text-white avatar-container">JH</span>
+                                <span class="justify-content-start align-items-center d-flex flex-fill ps-3 h6 mb-0">Jimmy Hendrix</span>
+                                <span class="justify-content-start align-items-center d-flex">heart</span>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-2 d-flex flex-column shadow-lg p-3">
+                            <div class="d-flex flex-row gx-2 align-items-center">
+                                <span class="bg-success rounded-circle text-white avatar-check d-inline">/</span>
+                                <span class="justify-content-center d-flex flex-fill ps-3 flex-column align-items-start">
+                                    <span class="h6 mb-0">Jimmy Hendrix</span>
+                                    <span class="fs-12">Built to be customized.</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="bg-white rounded-2 d-flex flex-column shadow-lg mb-3 align-items-center p-5">
+                            <div class="w-75 mb-2"><img class="w-100" src="assets/images/airbnb.svg"></div>
+                            <div class="mb-3">stars</div>
+                            <div class="h6">4.95 out of 5 stars</div>
+                            <div class="fs-12">From 23 reviews</div>
+                        </div>
+                        <div class="bg-white rounded-2 d-flex flex-column shadow-lg p-3 align-items-center">
+                            <div class="w-25 mb-4 mt-4 rounded-circle overflow-hidden"><img class="w-100" src="assets/images/company_01.png" ></div>
+                            <div class="mb-4 h6">Website UI Kit</div>
+                            <div class="w-50 d-flex flex-row">
+                                <div class="rounded-circle overflow-hidden border border-light"><img class="w-100" src="assets/images/person_01.jpg" ></div>
+                                <div class="rounded-circle overflow-hidden border border-light"><img class="w-100" src="assets/images/person_02.jpg" ></div>
+                                <div class="rounded-circle overflow-hidden border border-light"><img class="w-100" src="assets/images/person_03.jpg" ></div>
+                            </div>
+                            <div>icons</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 d-flex flex-column">
+                <span class="mb-4">
+                    <span class="badge rounded-pill text-bg-primary text-white d-inline py-2 px-3 ">Tecnology</span>
+                </span>
+                <h2 class="mb-4">We build for designers and developers</h2>
+                <p>Get components and examples, including tons of variables that will help you grow your business.</p>
+                <p class="text-primary">See case studies</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container-lg py-5 mt-5">
+        <div class="row">
+            <div class="col d-flex flex-column pe-5 justify-content-center">
+                <span class="mb-4">
+                    <span class="badge rounded-pill text-bg-warning text-white d-inline py-2 px-3 ">Easy to install</span>
+                </span>
+                <h2 class="mb-4">Download, install and run.</h2>
+                <p>Get components and examples, including tons of variables that will help you grow your business.</p>
+            </div>
+            <div class="col-lg-6 justify-content-center">
+                <div class="features-img rounded-4 bg-primary shadow-lg overflow-hidden">
+                    <img class="w-100" src="assets/images/img_03.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container-lg py-5 my-5">
+        <div class="d-flex flex-row justify-content-between solutions-container bg-dark-blue text-light">
+            <div class="col-lg-6 pe-4">
+                <h4 class="text-light mb-3">Infinite solutions</h4>
+                <p>Intuitive markup, powerful and lightning-fast build tools,
+                    everything you need to turn your ideas into incredible products.
+                    </p>
+            </div>
+            <div class="justify-content-end align-self-end pb-4">
+                <button class="btn btn-light px-4 py-3">Learn more</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-gray diagonal-background-section py-5 overflow-hidden">
+        <div class="container-lg my-5 pb-5"> 
+            <span class="badge rounded-pill text-bg-primary text-white d-inline py-2 px-3">Awards</span>
+            <h5 class="mt-4 mb-5 pb-5">Awards for design, creativity, and innovation on the Internet</h5>
+            <div class="d-flex flex-row gap-4 pt-4 pb-5 ">
+                <div class="width-250">
+                    <div class="card rounded-2 d-flex flex-column shadow-lg align-items-center px-4">
+                        <div class="w-75 mb-4"><img class="w-100" src="assets/images/airbnb.svg"></div>
+                        <div class="mb-3">stars</div>
+                        <div class="h5">4.95 out of 5 stars</div>
+                        <div class="p">From 23 reviews</div>
+                    </div>
+                </div>
+                <div class="width-250">
+                    <div class="card rounded-2 d-flex flex-column shadow-lg align-items-center px-4 position-relative bottom-25">
+                        <div class="w-75 mb-4"><img class="w-100" src="assets/images/amazon.svg"></div>
+                        <div class="mb-3 text-center">They build modern-looking websites easily using Tabs.</div>
+                        <a class="h6">Learn More</a>
+                    </div>
+                </div>
+                <div class="width-250">
+                    <div class="card rounded-2 d-flex flex-column shadow-lg align-items-center px-4">
+                        <div class="w-75 mb-4"><img class="w-100" src="assets/images/slack.svg"></div>
+                        <div class="mb-3 text-center">They build modern-looking websites easily using Trello.</div>
+                        <a class="h6">Learn More</a>
+                    </div>
+                </div>
+                <div class="width-250">
+                    <div class="card rounded-2 d-flex flex-column shadow-lg align-items-center px-4">
+                        <div class="w-75 mb-4"><img class="w-100" src="assets/images/spotify.svg"></div>
+                        <div class="mb-3">stars</div>
+                        <div class="h6">4.95 out of 5 stars</div>
+                        <div class="fs-12">From 23 reviews</div>
+                    </div>
+                </div>
+                <div class="width-250">
+                    <div class="card rounded-2 d-flex flex-column shadow-lg align-items-center px-4">
+                        <div class="w-75 mb-4"><img class="w-100" src="assets/images/paypal.svg"></div>
+                        <div class="mb-3 text-center">They build modern-looking websites easily using Docker.</div>
+                        <a class="h6">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white diagonal-background-section py-5 overflow-hidden">
+        <div class="container-lg my-5 pb-5">
+            <h1 class="text-center">Helpful answers</h1>
+            <p class="text-center mb-5">Start building fast, beautiful, and modern-looking websites in no time.</p>
+            <div class="row gx-4">
+                <div class="col">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item mb-4 shadow-lg border border-secondary-subtle rounded-4 overflow-hidden">
+                          <h2 class="accordion-header h2 rounded-4">
+                            <button class="accordion-button bg-white rounded-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span class="h5">Which license do I need?</span>
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse hide" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item mb-4 shadow-lg border border-secondary-subtle rounded-4 overflow-hidden">
+                            <h2 class="accordion-header h2 rounded-4">
+                              <button class="accordion-button bg-white rounded-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  <span class="h5">Which license do I need?</span>
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse hide" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item mb-4 shadow-lg border border-secondary-subtle rounded-4 overflow-hidden">
+                            <h2 class="accordion-header h2 rounded-4">
+                              <button class="accordion-button bg-white rounded-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  <span class="h5">Which license do I need?</span>
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse hide" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                              </div>
+                            </div>
+                          </div>
+    
+                    </div>    
+                </div>
+                <div class="col">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item mb-4 shadow-lg border border-secondary-subtle rounded-4 overflow-hidden">
+                            <h2 class="accordion-header h2 rounded-4">
+                              <button class="accordion-button bg-white rounded-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                  <span class="h5">Which license do I need?</span>
+                              </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse hide" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item mb-4 shadow-lg border border-secondary-subtle rounded-4 overflow-hidden">
+                              <h2 class="accordion-header h2 rounded-4">
+                                <button class="accordion-button bg-white rounded-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                    <span class="h5">Which license do I need?</span>
+                                </button>
+                              </h2>
+                              <div id="collapseFive" class="accordion-collapse collapse hide" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item mb-4 shadow-lg border border-secondary-subtle rounded-4 overflow-hidden">
+                              <h2 class="accordion-header h2 rounded-4">
+                                <button class="accordion-button bg-white rounded-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                    <span class="h5">Which license do I need?</span>
+                                </button>
+                              </h2>
+                              <div id="collapseSix" class="accordion-collapse collapse hide" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                              </div>
+                            </div>
+                    </div>  
+                </div>
+                <div class="text-center py-5">
+                    <h5 class="py-5">I want to start a new project</h5>
+                        <button type="button" class="btn btn-primary me-3 px-4 py-3 h5 text-white">Buy now</button>
+                        <span class="h5">Learn more</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer bg-dark-blue pt-5 pb-2 d-flex flex-column justify-content-end">
+        <div class="container-lg d-flex flex-row justify-content-between align-items-center">
+            <div>
+                <h1 class="text-light">Brilliant solutions for your ideas</h1>
+                <p class="text-white">Modern-looking websites.</p>
+            </div>
+            <div>
+                <button type="button" class="btn btn-light px-4 py-3 h5 me-2">Documentation</button>
+                <button type="button" class="btn btn-primary px-4 py-3 h5">Purchase now</button>
+            </div>
+        </div>
+        <hr class="container-lg text-light mb-5 faded-hr">
+        <div class="container-lg d-flex flex-row justify-content-between align-items-start">
+            <div class="col-lg-4 d-flex flex-column">
+                <span class="w-25 mb-4"><img class="w-100" src="assets/images/odoo-white.svg"></span>
+                <p class="text-light fs-12 pe-5">Odoo attempts to bring the best development experience to designers and developers by offering the tools needed for having a quick and solid start in most web projects.
+                </p>
+            </div>
+            <div class="col-lg-6 d-flex row gap-2 text-light align-items-start">
+                <div class="col d-flex flex-column">
+                    <b class="mb-3">Account</b>
+                    <ul class="list-unstyled">
+                        <li class="mb-1"><a class="text-light fs-12" href="#">Profile</a></li>
+                        <li class="mb-1"><a class="text-light fs-12" href="#">Settings</a></li>
+                        <li class="mb-1"><a class="text-light fs-12" href="#">Billings</a></li>
+                        <li><a class="text-light fs-12" href="#">Notifications</a></li>
+                    </ul>
+                </div>
+                <div class="col d-flex flex-column">
+                    <b class="mb-3">About</b>
+                    <ul class="list-unstyled">
+                        <li class="mb-1"><a class="text-light fs-12" href="#">Services</a></li>
+                        <li class="mb-1"><a class="text-light fs-12" href="#">Pricing</a></li>
+                        <li class="mb-1"><a class="text-light fs-12" href="#">Contact</a></li>
+                        <li><a class="text-light fs-12" href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col d-flex flex-column">
+                    <b class="mb-3">Company</b>
+                    <ul class="list-unstyled">
+                        <li class="mb-1"><a class="text-light fs-12" href="#">Community</a></li>
+                        <li class="mb-1"><a class="text-light fs-12" href="#">Help center</a></li>
+                        <li class="mb-1"><a class="text-light fs-12" href="#">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="container-lg text-light mb-3 faded-hr">
+        <div class="container-lg">
+            <div class="d-flex flex-row justify-content-between">
+                <div class="d-flex flex-row text-light gap-3">
+                    <div>C</div>
+                    <div class="logo-footer d-flex align-items-center"><img class="w-100" src="assets/images/odoo-white.svg"></div>
+                    <div class="d-flex fs-12 align-items-end">All Rights Reserved</div>
+                </div>
+                <div class="text-light d-flex gap-3">
+                    <span class="fs-12">Terms</span>
+                    <span class="fs-12">Privacy</span>
+                    <span class="fs-12">Cookies</span>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <!-- <script src="dist/bundle.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+.bg-blue-card {
+    background-color: rgb(46 16 101) !important;
+}
+
+
+.container-lg {
+    max-width: 1134px;
+}
+
+.bg-primary {
+    --bs-bg-opacity: .8;
+}
+
+body,
+.text-body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: rgb(46 16 101);
+}
+
+.custom-card {
+    border-radius: 12px 12px 60px 12px;
+}
+
+.diagonal-background-section {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    padding-bottom: 100px;
+}
+
+.progress {
+    height: 2px;
+}
+
+.projects-card {
+    max-width: 450px;
+}
+
+.projects-video-container {
+    width: 340px;
+    height: 240px;
+    background: blue;
+    position: absolute;
+    top: -86px;
+    right: 80px;
+}
+
+.features-img {
+    background: blue;
+    width: 100%;
+    height: 392px;
+    border-radius: 12px;
+}
+
+.avatar-container {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-check {
+    width: 54px !important;
+    height: 54px !important;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.solutions-container {
+    border-radius: 0px 80px 0px 80px;
+    padding: 80px 60px;
+}
+
+.bg-gray {
+    background: #fafbff;
+}
+
+.width-250 {
+    width: 250px;
+    min-width: 250px;
+}
+
+.width-250 .card {
+    height: 270px;
+    min-height: 270px;
+    max-height: 270px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-brand {
+    width: 94px;
+}
+
+.trusted-logo {
+    width: 80px;
+}
+
+.fs-12 {
+    font-size: 14px;
+}
+
+.bg-dark-blue {
+    background-color: #161348;
+}
+
+.footer {
+    margin-top: -140px;
+    height: 600px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo-footer {
+    width: 48px;
+}
+
+
+hr.faded-hr {
+    border: none; /* Remove default border */
+    height: 1px; /* Set the height of the HR */
+    background-image: linear-gradient(to right, transparent, #fff, transparent);
+    /* Faded effect: transparent on the sides, solid color in the middle */
+    margin-top: 20px; /* Adjust the margin as needed */
+    margin-bottom: 20px; /* Adjust the margin as needed */
+  }
