@@ -1,5 +1,5 @@
 // Import all of Bootstrap's CSS
-@import "bootstrap/scss/bootstrap";
+// @import "bootstrap/scss/bootstrap";
 
 .bg-blue-card {
     background-color: rgb(46 16 101) !important;
@@ -139,7 +139,7 @@ hr.faded-hr {
   }
 
   .small-icon {
-    font-size: 18px; /* Or any other size you prefer */
+    font-size: 18px; 
   }
 
   .checkbox-container {
@@ -149,3 +149,15 @@ hr.faded-hr {
     align-items: center;
     justify-content: center;
   }
+
+
+
+  $theme-colors: (
+    "success": #5ccaa7, 
+  );
+  
+
+  $text-success: #5ccaa7 !important; 
+  $bg-success: #5ccaa7 !important; 
+
+  @import "bootstrap/scss/bootstrap";
